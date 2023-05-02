@@ -1,0 +1,49 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  basicTimeStep 8
+}
+Viewpoint {
+  orientation 1 0 0 4.71238898038469
+  position -2.8704703818112426e-17 2.059908422222458 6.673429958058677e-16
+}
+Background {
+  skyColor [
+    1 1 1
+  ]
+}
+DirectionalLight {
+  direction 0 -1 1
+  intensity 3
+}
+RectangleArena {
+  floorTileSize 2 2
+  floorAppearance ChequeredParquetry {
+    textureTransform TextureTransform {
+      scale -14 -14
+    }
+    IBLStrength 7
+  }
+  wallAppearance BrushedAluminium {
+    colorOverride 0.1 0 0
+  }
+}
+E-puck {
+  translation -0.185005 0.000684877 0.452189
+  rotation 0.006127009549109888 0.999980517292977 0.0011936450290567782 -0.38999948092887327
+  controller "e-puck-move_to_destination_location"
+  supervisor TRUE
+  turretSlot [
+    Transform {
+    }
+    GPS {
+    }
+    Compass {
+    }
+  ]
+}
+WoodenBox {
+  translation 0.04 0.0499019 -0.071962
+  rotation -3.69748e-16 1 -3.69497e-16 -1.5707953071795862
+  size 0.05 0.1 0.4
+  mass 1
+}
